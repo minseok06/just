@@ -75,9 +75,11 @@
             </ul>
         </div>
         <div class="container">
+            <button onclick="arr('bbs')">0 공지사항 보이기</button>
+            <button onclick="arr('gal')">1 갤러리 보이기</button>
             <div class="tab">
-                <!-- 활성화 : on 추가  -->
-                <section class="on">
+                <!-- 활성화 : on 추가  addClasss('on') , removeClass('on') -->
+                <section class="on" id="bbs">
                     <h2 class="sec-tit">
                         <a href="#">공지사항</a>
                     </h2>
@@ -91,6 +93,7 @@
                     </div>
                 </section>
                 <section>
+                    <section id="gal">
                     <h2 class="sec-tit">
                         <a href="#">갤러리</a>
                     </h2>
@@ -159,5 +162,15 @@
             </button>
         </div>
     </div>
+
+    <script>
+        function arr(num){
+        document.getElementById(num).style.backgroundColor = "blue";
+        }
+    </script>
+
+
+
+
 </body>
 </html>
